@@ -20,3 +20,25 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+
+# Données sensibles (ne jamais committer les CSV avec données réelles)
+data/raw/*.csv
+data/processed/*.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Power BI (fichier binaire lourd, optionnel)
+*.pbix
+
+# Azure credentials
+*.json
+!adf/pipeline_config.json
